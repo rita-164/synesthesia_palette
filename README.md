@@ -58,8 +58,12 @@
 
 ### **■スケジュール**
 
-　企画〜技術調査：4/15
-　README〜ER図作成：4/20
-　メイン機能実装：4/20 - 5/20
-　β版をRUNTEQ内リリース（MVP）：5/20
-　本番リリース：6月初旬
+企画〜技術調査：4/15
+README〜ER図作成：4/20
+メイン機能実装：4/20 - 5/20
+β版をRUNTEQ内リリース（MVP）：5/20
+本番リリース：6月初旬
+
+### **■画面遷移図**
+
+https://www.figma.com/file/3UARR3CPYuT2D3wV9OWPKq/synesthesia_palette?node-id=0%3A1
