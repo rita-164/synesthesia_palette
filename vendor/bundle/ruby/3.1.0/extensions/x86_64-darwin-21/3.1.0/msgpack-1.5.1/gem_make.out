@@ -1,0 +1,29 @@
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.1/ext/msgpack
+/Users/Ryota/.rbenv/versions/3.1.2/bin/ruby -I /Users/Ryota/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220509-69958-d7g2c.rb extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... no
+checking for rb_enc_interned_str() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.1/ext/msgpack
+make DESTDIR\= clean
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.1/ext/msgpack
+make DESTDIR\=
+compiling buffer.c
+compiling buffer_class.c
+compiling extension_value_class.c
+compiling factory_class.c
+compiling packer.c
+compiling packer_class.c
+compiling packer_ext_registry.c
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+compiling unpacker_class.c
+compiling unpacker_ext_registry.c
+linking shared-object msgpack/msgpack.bundle
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.1/ext/msgpack
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220509-69958-jnz6e6/msgpack
