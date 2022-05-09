@@ -29,6 +29,7 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'jquery-rails'
 gem 'sorcery'
 gem 'pry-byebug'
+gem 'rails-i18n'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
