@@ -1,0 +1,16 @@
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.2/ext/strscan
+/Users/Ryota/.rbenv/versions/3.1.2/bin/ruby -I /Users/Ryota/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220510-88008-9rldrh.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.2/ext/strscan
+make DESTDIR\= clean
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.2/ext/strscan
+make DESTDIR\=
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.2/ext/strscan
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20220510-88008-rp1aor

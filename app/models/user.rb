@@ -8,5 +8,7 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 255 }
   validates :email, uniqueness: true, presence: true
 
+  validates :reset_password_token, uniqueness: true, allow_nil: true
+
   enum role: { general: 0, admin: 1 }
 end
