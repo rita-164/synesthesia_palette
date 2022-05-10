@@ -1,15 +1,20 @@
 <footer id='footer' class='footer-bottom'>
   <div class='container'>
     <div class='row'>
-      <div class='col-sm-6 col-12'>
-        <div class='copyright'>
-          <p>共感覚パレットについて</p>
-          <ul style="list-style:none">
-            <p style="float:left">利用規約</p>
-            <p style="float:left">よくある質問</p>
-            <p style="float:left">フィードバック・ご意見</p>
-          </ul>
-        </div>
+      <div class="left">
+        <br>
+        <%= link_to root_path, class: 'navbar-brand' do %>
+          <%= image_tag 'logo2.png', size: '64x50' %>
+        <% end %>
+      </div>
+      <div class="right">
+        <br>
+        <ul style="list-style:none">
+          <h5>共感覚パレットについて</h5>
+          <%= link_to '利用規約', logout_path, class: 'item link', method: :delete %>
+          <%= link_to 'よくある質問', logout_path, class: 'item link', method: :delete %>
+          <%= link_to 'フィードバック・ご意見', logout_path, class: 'item link', method: :delete %>
+        </ul>
       </div>
     </div>
   </div>
