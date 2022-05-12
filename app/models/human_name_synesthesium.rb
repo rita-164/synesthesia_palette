@@ -1,4 +1,5 @@
 class HumanNameSynesthesium < ApplicationRecord
+  belongs_to :user
 
   VALID_NAME_REGEX =/\A[ぁ-んー－]+\z/
 
