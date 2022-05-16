@@ -3,14 +3,7 @@
     <div class="col-lg-10 offset-lg-1">
     <br>
       <!-- 検索フォーム -->
-      <form>
-        <div class="input-group mb-3">
-          <input class="form-control" placeholder="検索ワード" type="search" />
-          <div class="input-group-append">
-            <input type="submit" value="検索" class="btn btn-dark" />
-          </div>
-        </div>
-      </form>
+      <%= render 'search_form', url: human_name_synesthesia_path %>
     </div>
   </div>
 
