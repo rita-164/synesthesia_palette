@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
   resources :users, only: %i[new create]
   resources :password_resets, only: %i[new create edit update]
-  resources :human_name_synesthesia, only: %i[index new create]
+  resources :human_name_synesthesia
 end

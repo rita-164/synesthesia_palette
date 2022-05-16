@@ -1,0 +1,34 @@
+<div class="container pt-5">
+  <div class="row mb-3">
+    <div class="col-lg-8 offset-lg-2">
+      <h1><%= t('.title') %></h1>
+      <!-- 掲示板内容 -->
+      <article class="card">
+        <div class="card-body">
+          <div class='row'>
+            <div class='col-md-9'>
+              <h3 class="d-inline"><%= @human_name_synesthesia.name %></h3>
+              <div class='mr10 float-right'>
+              <li class="list-inline-item">
+              <%= link_to human_name_synesthesium_path(@human_name_synesthesia), class: 'link', id: "button-delete-#{@human_name_synesthesia.id}", method: :delete, data: { confirm: t('defaults.message.delete_confirm') } do %>
+                <%= icon 'fas', 'trash' %>
+              <% end %>
+              </li>
+              <li class="list-inline-item">
+              <%= link_to edit_human_name_synesthesium_path(@human_name_synesthesia), class: 'link', id: "button-edit-#{@human_name_synesthesia.id}" do %>
+                <%= icon 'fa', 'pen' %>
+              <% end %>
+              </li>
+            </div>
+              <ul class="list-inline">
+                <li class="list-inline-item">by <%= @human_name_synesthesia.user.name %></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bg_test2", style="background-color: #{human_name_synesthesia.color}" ><%= @human_name_synesthesia.color %></div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+</div>
