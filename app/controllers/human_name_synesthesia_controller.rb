@@ -1,6 +1,7 @@
 class HumanNameSynesthesiaController < ApplicationController
     def index
-        @human_name_synesthesium = HumanNameSynesthesium.all.includes(:user).order(created_at: :desc)
+        @q = HumanNameSynesthesium.ransack(params[:q])
+        @human_name_synesthesium = @q.result(distinct: true).all.includes(:user).order(created_at: :desc)
     end
 
     def new

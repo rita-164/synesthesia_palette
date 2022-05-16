@@ -2,15 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .bg_test2 {
-    color:  #fff;               /* 文字色指定 */
-    height: 200px;              /* 高さ指定 */
-    width:  200px;              /* 幅指定 */
-    font-size:  14px;           /* 文字サイズ指定 */
-    background-color: #009688;  /* 背景色指定 */
-    padding:  20px;             /* 余白指定 */
-    position:  relative;        /* 位置指定 */
+    color:  #fff;
+    height: 200px;
+    width:  200px;
+    font-size:  14px;
+    padding:  20px;
+    position:  relative;
     top: 10px;
-    display: block;              /* 位置指定 */
+    display: block;
     margin-left: auto;
-    margin-right: auto            /* 位置指定 */
+    margin-right: auto
 }
