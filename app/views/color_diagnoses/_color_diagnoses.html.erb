@@ -1,0 +1,19 @@
+<div class="col-sm-12 col-lg-4 mb-3">
+  <div id="color_diagnoses-id-<%= color_diagnoses.id %>">
+    <div class="card">
+      <div class="card-header">
+        <div class='mr10'>
+          <li class="list-inline-item">
+          <h4>
+            <%= link_to color_diagnoses.name, human_name_synesthesium_path(color_diagnoses), class: 'link' %>
+          </h4>
+          </li>
+        </div>
+
+      </div>
+      <div class="card-body">
+        <div class="bg_test1  radius1", style="background-color: <%= color_diagnoses.color %>" ></div>
+      </div>
+    </div>
+  </div>
+</div>

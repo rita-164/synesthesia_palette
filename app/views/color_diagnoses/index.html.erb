@@ -1,0 +1,49 @@
+<div class='top-wrapper'>
+  <div style='text-align:center' class='top-inner-text'>
+    <br>
+    <br>
+    <br>
+    <%= image_tag 'what_is_your_color.png', size: '527x50' %>
+    <br>
+    <br>
+    <br>
+    <h4>名前を入れてね</h4>
+    <br>
+    <!-- 入力フォーム -->
+    <div class="col-lg-10 offset-lg-1">
+      <%= search_form_for @q, class:'text-center', url: color_diagnoses_path do |f| %>
+        <%= f.search_field :name_eq, class: 'form-control form-control-lg text-center', placeholder: 'ひらがなで入力' %>
+          <br>
+          <%= f.submit 'Check!', class: 'btn1 btn-dark form-control-lg' %>
+        </div>
+      <% end %>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+
+<div class='lesson-wrapper'>
+  <div style='text-align:center' class='top-inner-text'>
+    <br>
+    <br>
+    <br>
+    <%= image_tag 'your_color_is.png', size: '383x50' %>
+    <br>
+    <br>
+    <!-- 診断結果 -->
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-12">
+        <div class="card-div">
+          <% if @human_name_synesthesium.present? %>
+            <%= render partial: "color_diagnoses", collection: @human_name_synesthesium %>
+          <% else %>
+            <p><%= t('.no_result') %></p>
+          <% end %>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
