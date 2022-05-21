@@ -1,7 +1,14 @@
 <div class="col-sm-12 col-lg-4 mb-3">
   <div id="human_name_synesthesia-id-<%= human_name_synesthesia.id %>">
     <div class="card">
-      <div class="card-body">
+      <div class="card-header">
+        <div class='mr10 float-left'>
+          <li class="list-inline-item">
+          <h4>
+            <%= link_to human_name_synesthesia.name, human_name_synesthesium_path(human_name_synesthesia), class: 'link' %>
+          </h4>
+          </li>
+        </div>
         <div class='mr10 float-right'>
           <li class="list-inline-item">
           <%= link_to human_name_synesthesium_path(human_name_synesthesia), class: 'link', id: "button-delete-#{human_name_synesthesia.id}", method: :delete, data: { confirm: t('defaults.message.delete_confirm') } do %>
@@ -14,10 +21,9 @@
           <% end %>
           </li>
         </div>
-        <h4 class="card-title">
-          <%= link_to human_name_synesthesia.name, human_name_synesthesium_path(human_name_synesthesia), class: 'link' %>
-        </h4>
-        <div class="bg_test2", style="background-color: <%= human_name_synesthesia.color %>" ><%= human_name_synesthesia.color %></div>
+      </div>
+      <div class="card-body">
+        <div class="bg_test2  radius1", style="background-color: <%= human_name_synesthesia.color %>" ></div>
       </div>
     </div>
   </div>

@@ -1,0 +1,30 @@
+// Place all the styles related to the color_diagnoses controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.text-center {
+    width: 30%;
+    height: 100%;
+    margin:  0 auto;
+}
+
+.lesson-wrapper {
+    display: none;
+}
+
+.card-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.bg_test1 {
+    height: 250px;
+    width:  250px;
+    padding:  20px;
+    position:  relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

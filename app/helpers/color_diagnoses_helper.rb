@@ -1,0 +1,2 @@
+module ColorDiagnosesHelper
+end
