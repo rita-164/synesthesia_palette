@@ -12,7 +12,7 @@
     <!-- 入力フォーム -->
     <div class="col-lg-10 offset-lg-1">
       <%= search_form_for @q, class:'text-center', url: color_diagnoses_path do |f| %>
-        <%= f.search_field :name_eq, class: 'form-control form-control-lg text-center', placeholder: 'ひらがなで入力' %>
+        <%= f.search_field :name_eq, class: 'form-control form-control-lg text-center', pattern: "[\u3041-\u3096]*", required: true, placeholder: 'ひらがなで入力' %>
           <br>
           <%= f.submit 'Check!', class: 'btn1 btn-dark form-control-lg' %>
         </div>
@@ -29,8 +29,6 @@
     <br>
     <br>
     <%= image_tag 'your_color_is.png', size: '383x50' %>
-    <br>
-    <br>
     <!-- 診断結果 -->
     <div class="container pt-3">
       <div class="row">
@@ -39,7 +37,7 @@
           <% if @human_name_synesthesium.present? %>
             <%= render partial: "color_diagnoses", collection: @human_name_synesthesium %>
           <% else %>
-            <p><%= t('.no_result') %></p>
+          <%= image_tag 'sorry.png', size: '600x479' %>
           <% end %>
         </div>
         </div>

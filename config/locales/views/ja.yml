@@ -3,9 +3,8 @@ ja:
     login: 'ログイン'
     register: '登録'
     logout: 'ログアウト'
-    post: '投稿'
     search: '検索'
-    search_word: '検索ワード'
+    search_word: 'ひらがなで入力'
     unspecified: '指定なし'
     show: '詳細'
     edit: '編集'
@@ -39,34 +38,6 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
-  boards:
-    index:
-      title: '掲示板一覧'
-      no_result: '掲示板がありません。'
-    new:
-      title: '掲示板作成'
-    show: 
-      title: '掲示板詳細'
-    edit:
-      title: '掲示板編集'
-    bookmarks:
-      title: 'ブックマーク一覧'
-      no_result: 'ブックマーク中の掲示板がありません'
-    update:
-      success: '掲示板を更新しました'
-      fail: '掲示板を更新できませんでした'
-    destroy:
-      success: '掲示板を削除しました'
-  comments:
-    destroy:
-      success: 'コメントを削除しました'
-  bookmarks:
-    index:
-      title: 'ブックマーク一覧'
-    create:
-      success: 'ブックマークしました'
-    destroy:
-      success: 'ブックマークを外しました'
   profiles:
     show:
       title: 'プロフィール'
@@ -92,9 +63,6 @@ ja:
         fail: 'ログインに失敗しました'
       destroy:
         success: 'ログアウトしました'
-    dashboards:
-      index:
-        title: 'ダッシュボード'
     users:
       index:
         title: 'ユーザー一覧'
@@ -105,13 +73,3 @@ ja:
         title: 'ユーザー詳細'
       edit:
         title: 'ユーザー編集'
-    boards:
-      index:
-        title: '掲示板一覧'
-      update:
-        success: '掲示板を更新しました'
-        fail: '掲示板を更新できませんでした'
-      show:
-        title: '掲示板詳細'
-      edit:
-        title: '掲示板編集'
