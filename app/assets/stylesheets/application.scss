@@ -53,4 +53,28 @@
     border: none;
     background: #dddddd;
  }
+
+ .blobCont {
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   z-index: -10;
+ }
  
+ @for $i from 1 through 18 {
+   $a: #{$i*90};
+   $b: #{$i*90+360};
+ 
+   .blob:nth-child(#{$i}) {
+     animation: move#{$i} 20s infinite linear;
+   }
+ 
+   @keyframes move#{$i} {
+     from {
+       transform: rotate(#{$a}deg) translate(200px, 0.1px) rotate(-#{$a}deg);
+     }
+     to {
+       transform: rotate(#{$b}deg) translate(200px, 0.1px) rotate(-#{$b}deg);
+     }
+   }
+ }
