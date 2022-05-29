@@ -38,6 +38,13 @@ ja:
       fail: 'ログインに失敗しました'
     destroy:
       success: 'ログアウトしました'
+  human_name_synesthesia:
+    new:
+      title: '色作成'
+    show:
+      title: 'あなたの色'
+    edit:
+      title: '色の編集'
   profiles:
     show:
       title: 'プロフィール'
