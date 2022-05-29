@@ -2,8 +2,7 @@ ja:
   activerecord:
     models:
       user: 'ユーザー'
-      board: '掲示板'
-      comment: 'コメント'
+      human_name_synesthesium: '共感覚パレット'
     attributes:
       user:
         name: 'ニックネーム'
@@ -13,14 +12,9 @@ ja:
         avatar: 'アバター'
         role: '権限'
         created_at: '作成日時'
-      board:
-        title: 'タイトル'
-        body: '本文'
-        author: '作成者'
-        created_at: '作成日時'
-        board_image: 'サムネイル'
-      comment:
-        body: 'コメント'
+      human_name_synesthesium:
+        name: '名前'
+        color: '色'
   enums:
     user:
       role:
