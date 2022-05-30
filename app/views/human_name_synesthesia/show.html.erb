@@ -27,7 +27,9 @@
               </ul>
             </div>
           </div>
-          <div class="bg_test2", style="background-color: <%= @human_name_synesthesia.color %>" ></div>
+          <div class="card-body">
+            <%= image_tag @human_name_synesthesia.color_url, class: 'card-img-top', size: '300x200' %>
+          </div>
         </div>
       </article>
     </div>

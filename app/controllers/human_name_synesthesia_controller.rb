@@ -45,6 +45,6 @@ class HumanNameSynesthesiaController < ApplicationController
     private
     
     def human_name_synesthesia_params
-        params.require(:human_name_synesthesium).permit(:name, :color)
+        params.require(:human_name_synesthesium).permit(:name, :color, :color_cache)
     end
 end

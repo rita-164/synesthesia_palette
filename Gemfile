@@ -36,6 +36,8 @@ gem 'net-imap'
 gem 'net-pop'
 gem 'rexml', '~> 3.2', '>= 3.2.4'
 gem 'ransack'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
