@@ -9,6 +9,7 @@
           </h4>
           </li>
         </div>
+        <% if current_user.own?(human_name_synesthesia) %>
         <div class='mr10 float-right'>
           <li class="list-inline-item">
           <%= link_to human_name_synesthesium_path(human_name_synesthesia), class: 'link', id: "button-delete-#{human_name_synesthesia.id}", method: :delete, data: { confirm: t('defaults.message.delete_confirm') } do %>
@@ -21,9 +22,10 @@
           <% end %>
           </li>
         </div>
+        <% end %>
       </div>
       <div class="card-body">
-        <div class="bg_test2  radius1", style="background-color: <%= human_name_synesthesia.color %>" ></div>
+        <%= image_tag human_name_synesthesia.color_url, class: 'card-img-top', size: '300x200' %>
       </div>
     </div>
   </div>
