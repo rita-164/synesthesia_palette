@@ -45,11 +45,16 @@ ja:
       title: 'あなたの色'
     edit:
       title: '色の編集'
+    index:
+      title: 'みんなの色'
   profiles:
     show:
       title: 'プロフィール'
     edit:
       title: 'プロフィール編集'
+  color_diagnoses:
+    index:
+      title: '名前の色診断'
   password_resets:
     new: 
       title: 'パスワードリセット申請'
