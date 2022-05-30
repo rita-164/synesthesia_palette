@@ -9,7 +9,7 @@ ja:
         email: 'メールアドレス'
         password: 'パスワード'
         password_confirmation: 'パスワード再入力'
-        avatar: 'アバター'
+        avatar: 'アイコン'
         role: '権限'
         created_at: '作成日時'
       human_name_synesthesium:
