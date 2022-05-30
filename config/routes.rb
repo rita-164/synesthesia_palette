@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :password_resets, only: %i[new create edit update]
   resources :human_name_synesthesia
   resources :color_diagnoses
+  resource :profile, only: %i[show edit update]
 end
