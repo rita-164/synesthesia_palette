@@ -85,3 +85,6 @@ ja:
         title: 'ユーザー詳細'
       edit:
         title: 'ユーザー編集'
+    dashboards:
+      index:
+        title: 'ダッシュボード'

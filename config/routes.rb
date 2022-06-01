@@ -12,4 +12,11 @@ Rails.application.routes.draw do
   resources :human_name_synesthesia
   resources :color_diagnoses
   resource :profile, only: %i[show edit update]
+
+  namespace :admin do
+    root to: 'dashboards#index'
+    get 'login', to: 'user_sessions#new'
+    post 'login', to: 'user_sessions#create'
+    delete 'logout', to: 'user_sessions#destroy'
+  end
 end
