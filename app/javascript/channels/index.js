@@ -8,6 +8,6 @@ $(function(){
   $(".btn1").click(function() {
  });
     $(".top-wrapper").hide();
-    $(".lesson-wrapper").show();
+    $(".lesson-wrapper").fadeIn(900);
     return false;
 });
