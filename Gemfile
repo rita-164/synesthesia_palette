@@ -39,6 +39,7 @@ gem 'ransack'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'enum_help'
+gem 'kaminari'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
