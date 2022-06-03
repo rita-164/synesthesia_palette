@@ -6,8 +6,8 @@ channels.keys().forEach(channels)
 
 $(function(){
   $(".btn1").click(function() {
+ });
     $(".top-wrapper").hide();
     $(".lesson-wrapper").show();
     return false;
-  });
 });
