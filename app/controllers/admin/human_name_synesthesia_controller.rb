@@ -3,7 +3,7 @@ class Admin::HumanNameSynesthesiaController < Admin::BaseController
 
     def index
         @q = HumanNameSynesthesium.ransack(params[:q])
-        @human_name_synesthesium = @q.result(distinct: true).all.includes(:user).order(created_at: :desc)
+        @human_name_synesthesium = @q.result(distinct: true).all.includes(:user).order(created_at: :desc).page(params[:page])
     end
 
     def new
