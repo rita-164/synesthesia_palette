@@ -67,6 +67,18 @@ ja:
     update:
       success: 'パスワードを変更しました'
       fail: 'パスワードを変更できませんでした'
+  contacts:
+    new:
+      title: 'フィードバック・ご意見'
+    confirm:
+      title: '入力内容確認'
+    done:
+      title: '送信完了'
+  pages:
+    FAQ:
+      title: 'FAQ'
+    terms:
+      title: '利用規約'
   admin:
     user_sessions:
       new:

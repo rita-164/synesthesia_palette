@@ -1,0 +1,15 @@
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+/Users/Ryota/.rbenv/versions/3.1.2/bin/ruby -I /Users/Ryota/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220607-14478-ta0kcq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/Ryota/workspace/synesthesia_palette/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220607-14478-gdq68p/bootsnap
