@@ -15,6 +15,10 @@ ja:
       human_name_synesthesium:
         name: '名前'
         color: '色'
+      contact:
+        name: '名前'
+        email: 'メールアドレス'
+        message: 'メッセージ'
   enums:
     user:
       role:

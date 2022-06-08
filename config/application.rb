@@ -36,5 +36,10 @@ module SynesthesiaPalette
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    if Rails.env.development? || Rails.env.test?
+      Bundler.require(*Rails.groups)
+      Dotenv::Railtie.load
+    end
   end
 end

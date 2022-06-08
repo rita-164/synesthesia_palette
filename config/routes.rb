@@ -23,4 +23,9 @@ Rails.application.routes.draw do
     resources :human_name_synesthesia, only: %i[index edit update show destroy]
     resources :users, only: %i[index edit update show destroy]
   end
+
+  resources :contacts, only: [:new, :create]
+  post 'contacts/confirm', to: 'contacts#confirm', as: 'confirm'
+  post 'contacts/back', to: 'contacts#back', as: 'back'
+  get 'done', to: 'contacts#done', as: 'done'
 end
