@@ -31,7 +31,7 @@ class Admin::HumanNameSynesthesiaController < Admin::BaseController
     def update
         @human_name_synesthesia = HumanNameSynesthesium.find(params[:id])
         if @human_name_synesthesia.update(human_name_synesthesia_params)
-          redirect_to human_name_synesthesia_path, success: t('defaults.message.updated', item: HumanNameSynesthesium.model_name.human)
+          redirect_to admin_human_name_synesthesia_path, success: t('defaults.message.updated', item: HumanNameSynesthesium.model_name.human)
         else
           flash.now['danger'] = t('defaults.message.not_updated', item: HumanNameSynesthesium.model_name.human)
           render :edit
@@ -41,7 +41,7 @@ class Admin::HumanNameSynesthesiaController < Admin::BaseController
     def destroy
         @human_name_synesthesia = HumanNameSynesthesium.find(params[:id])
         @human_name_synesthesia.destroy!
-        redirect_to human_name_synesthesia_path, success: t('defaults.message.deleted', item: HumanNameSynesthesium.model_name.human)
+        redirect_to admin_human_name_synesthesia_path, success: t('defaults.message.deleted', item: HumanNameSynesthesium.model_name.human)
     end
     
     private
